@@ -1,63 +1,133 @@
 /* =====================================
-   PKFY LOGISTICS JAVASCRIPT
+   PKFY LOGISTICS
+   MOBILE NAVIGATION
 ===================================== */
+
+
+const menuToggle =
+    document.getElementById("menuToggle");
+
+
+const navbar =
+    document.getElementById("navbar");
+
+
+const mobileOverlay =
+    document.getElementById("mobileMenuOverlay");
 
 
 /* =====================================
-   MOBILE MENU
+   OPEN / CLOSE MENU
 ===================================== */
 
-const menuToggle = document.getElementById("menuToggle");
-
-const navbar = document.getElementById("navbar");
-
-
-menuToggle.addEventListener("click", () => {
+function toggleMenu() {
 
     navbar.classList.toggle("active");
 
-});
+    menuToggle.classList.toggle("active");
+
+    mobileOverlay.classList.toggle("active");
 
 
-/* CLOSE MOBILE MENU
-   WHEN A NAVIGATION LINK IS CLICKED
-*/
+    const isOpen =
+        navbar.classList.contains("active");
 
-const navLinks = document.querySelectorAll(".navbar a");
+
+    menuToggle.setAttribute(
+        "aria-expanded",
+        isOpen
+    );
+
+}
+
+
+/* =====================================
+   MENU BUTTON
+===================================== */
+
+menuToggle.addEventListener(
+    "click",
+    toggleMenu
+);
+
+
+/* =====================================
+   CLICK OUTSIDE MENU
+===================================== */
+
+mobileOverlay.addEventListener(
+    "click",
+    toggleMenu
+);
+
+
+/* =====================================
+   CLOSE MENU WHEN LINK CLICKED
+===================================== */
+
+const navLinks =
+    document.querySelectorAll(
+        ".navbar a"
+    );
 
 
 navLinks.forEach(link => {
 
-    link.addEventListener("click", () => {
+    link.addEventListener(
+        "click",
+        () => {
 
-        navbar.classList.remove("active");
+            navbar.classList.remove(
+                "active"
+            );
 
-    });
+            menuToggle.classList.remove(
+                "active"
+            );
+
+            mobileOverlay.classList.remove(
+                "active"
+            );
+
+            menuToggle.setAttribute(
+                "aria-expanded",
+                "false"
+            );
+
+        }
+    );
 
 });
 
 
 /* =====================================
-   HEADER SHADOW ON SCROLL
+   HEADER SHADOW
 ===================================== */
 
-const header = document.getElementById("header");
+const header =
+    document.getElementById("header");
 
 
-window.addEventListener("scroll", () => {
+window.addEventListener(
+    "scroll",
+    () => {
 
-    if (window.scrollY > 50) {
+        if (
+            window.scrollY > 30
+        ) {
 
-        header.style.boxShadow =
-            "0 5px 25px rgba(0,0,0,0.3)";
+            header.style.boxShadow =
+                "0 5px 25px rgba(0,0,0,0.35)";
 
-    } else {
+        } else {
 
-        header.style.boxShadow = "none";
+            header.style.boxShadow =
+                "none";
+
+        }
 
     }
-
-});
+);
 
 
 /* =====================================
@@ -65,100 +135,80 @@ window.addEventListener("scroll", () => {
 ===================================== */
 
 const trackButton =
-    document.getElementById("trackButton");
+    document.getElementById(
+        "trackButton"
+    );
+
 
 const trackingNumber =
-    document.getElementById("trackingNumber");
+    document.getElementById(
+        "trackingNumber"
+    );
+
 
 const trackingResult =
-    document.getElementById("trackingResult");
+    document.getElementById(
+        "trackingResult"
+    );
 
 
-trackButton.addEventListener("click", () => {
+trackButton.addEventListener(
+    "click",
+    () => {
 
-    const number =
-        trackingNumber.value.trim();
+        const number =
+            trackingNumber.value.trim();
 
 
-    if (number === "") {
+        trackingResult.style.display =
+            "block";
 
-        trackingResult.style.display = "block";
+
+        if (!number) {
+
+            trackingResult.innerHTML =
+                "Please enter your tracking number.";
+
+            return;
+
+        }
+
 
         trackingResult.innerHTML =
-            "Please enter your tracking number.";
 
-        return;
+            `Tracking number <strong>${number}</strong>
+             received. Live tracking will be
+             available when the PKFY Logistics
+             tracking system is connected.`;
 
     }
-
-
-    trackingResult.style.display = "block";
-
-
-    trackingResult.innerHTML =
-
-        `Tracking number <strong>${number}</strong> received.
-        Your live tracking system will be connected
-        once the PKFY Logistics backend is integrated.`;
-
-});
+);
 
 
 /* =====================================
    CURRENT YEAR
 ===================================== */
 
-document.getElementById("year").textContent =
+document.getElementById(
+    "year"
+).textContent =
     new Date().getFullYear();
 
 
 /* =====================================
-   SMOOTH SCROLL
+   SCROLL REVEAL
 ===================================== */
 
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+const revealElements =
+    document.querySelectorAll(
 
-    anchor.addEventListener("click", function (event) {
+        ".service-card, " +
+        ".problem-card, " +
+        ".step, " +
+        ".price-card, " +
+        ".contact-card"
 
-        const target =
-            document.querySelector(
-                this.getAttribute("href")
-            );
-
-
-        if (target) {
-
-            event.preventDefault();
-
-
-            target.scrollIntoView({
-
-                behavior: "smooth",
-
-                block: "start"
-
-            });
-
-        }
-
-    });
-
-});
-
-
-/* =====================================
-   SIMPLE SCROLL REVEAL
-===================================== */
-
-const revealElements = document.querySelectorAll(
-
-    ".service-card, " +
-    ".problem-card, " +
-    ".step, " +
-    ".price-card, " +
-    ".contact-card"
-
-);
+    );
 
 
 const revealObserver =
@@ -167,22 +217,27 @@ const revealObserver =
 
         entries => {
 
-            entries.forEach(entry => {
+            entries.forEach(
+                entry => {
 
-                if (entry.isIntersecting) {
+                    if (
+                        entry.isIntersecting
+                    ) {
 
-                    entry.target.style.opacity = "1";
+                        entry.target.style.opacity =
+                            "1";
 
-                    entry.target.style.transform =
-                        "translateY(0)";
+                        entry.target.style.transform =
+                            "translateY(0)";
 
-                    revealObserver.unobserve(
-                        entry.target
-                    );
+                        revealObserver.unobserve(
+                            entry.target
+                        );
+
+                    }
 
                 }
-
-            });
+            );
 
         },
 
@@ -195,16 +250,21 @@ const revealObserver =
     );
 
 
-revealElements.forEach(element => {
+revealElements.forEach(
+    element => {
 
-    element.style.opacity = "0";
+        element.style.opacity =
+            "0";
 
-    element.style.transform =
-        "translateY(25px)";
+        element.style.transform =
+            "translateY(25px)";
 
-    element.style.transition =
-        "opacity 0.6s ease, transform 0.6s ease";
+        element.style.transition =
+            "opacity 0.6s ease, transform 0.6s ease";
 
-    revealObserver.observe(element);
+        revealObserver.observe(
+            element
+        );
 
-});
+    }
+);
