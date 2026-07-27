@@ -53,9 +53,7 @@
 
         <!-- PKFY LOGISTICS OFFICIAL LOGO -->
 
-        <img
-            src="https://i.postimg.cc/sxKky12p/IMG-2750.png"
-            alt="PKFY Logistics Logo"
+<img src="images/pkfy-logo.png" alt="PKFY Logistics Logo">
         >
 
     </a>
