@@ -12,17 +12,12 @@
 
     <meta
         name="description"
-        content="PKFY Logistics provides reliable pickup, packing, auction house pickup, Bid For Me auction bidding assistance, marketplace delivery, business delivery and Ontario-wide logistics services."
+        content="PKFY Logistics provides reliable pickup, packing, auction house pickup, marketplace delivery, business delivery and Ontario-wide logistics services."
     >
 
     <meta
         name="keywords"
-        content="PKFY Logistics, Ontario delivery, auction pickup, Bid For Me, auction bidding service, pickup and delivery, packing service, marketplace delivery"
-    >
-
-    <meta
-        name="theme-color"
-        content="#0b1f3a"
+        content="PKFY Logistics, Ontario delivery, auction pickup, pickup and delivery, packing service, marketplace delivery"
     >
 
     <title>
@@ -48,25 +43,21 @@
 
     <div class="container nav-container">
 
+
         <a
             href="#home"
             class="logo"
-            aria-label="PKFY Logistics Home"
         >
 
             <img
-                class="pkfy-logo"
-                src=""
+                src="https://kommodo.ai/i/hWZG5XUMtItwzxWWTYmN"
                 alt="PKFY Logistics Logo"
             >
 
         </a>
 
 
-        <nav
-            id="navMenu"
-            aria-label="Main Navigation"
-        >
+        <nav id="navMenu">
 
             <a href="#home">
                 Home
@@ -74,10 +65,6 @@
 
             <a href="#services">
                 Services
-            </a>
-
-            <a href="#bid-for-me">
-                Bid For Me
             </a>
 
             <a href="#how-it-works">
@@ -101,15 +88,14 @@
 
         <button
             class="menu-button"
-            id="menuButton"
-            type="button"
+            onclick="toggleMenu()"
             aria-label="Open Menu"
-            aria-expanded="false"
         >
 
             ☰
 
         </button>
+
 
     </div>
 
@@ -126,30 +112,12 @@
     class="hero"
 >
 
-    <div class="hero-road">
-
-        <div class="moving-truck">
-            🚚
-        </div>
-
-    </div>
-
-
-    <div class="floating-package package-one">
-        📦
-    </div>
-
-    <div class="floating-package package-two">
-        📦
-    </div>
-
 
     <div class="container hero-content">
 
 
-        <div
-            class="hero-text reveal"
-        >
+        <div class="hero-text">
+
 
             <div class="badge">
 
@@ -175,15 +143,17 @@
                 and deliver it safely to your door.
 
                 From auction house purchases to
-                auction bidding assistance, marketplace
-                products and small business deliveries,
-                PKFY Logistics makes your delivery simple.
+                marketplace products and small business
+                deliveries, PKFY Logistics makes your
+                delivery simple.
 
             </p>
 
 
             <div class="hero-buttons">
 
+
+                <!-- MAIN GOOGLE FORM BUTTON -->
 
                 <a
                     href="https://forms.gle/nzZoX1SvR768UcBG8"
@@ -209,18 +179,18 @@
 
             </div>
 
+
         </div>
 
 
 
-        <div
-            class="hero-card reveal"
-        >
+        <div class="hero-card">
+
 
             <img
-                class="pkfy-logo hero-logo"
-                src=""
-                alt="PKFY Logistics Logo"
+                src="https://kommodo.ai/i/hWZG5XUMtItwzxWWTYmN"
+                alt="PKFY Logistics"
+                class="hero-logo"
             >
 
 
@@ -233,16 +203,15 @@
 
             <h3>
 
-                Reliable Pickup & Delivery
+                Pick. Pack. Deliver.
 
             </h3>
 
 
             <p>
 
-                From auction bidding to pickup,
-                packing and delivery, PKFY Logistics
-                helps make the entire process simple.
+                One simple solution for your pickup,
+                packing and delivery needs.
 
             </p>
 
@@ -256,9 +225,12 @@
 
             </strong>
 
+
         </div>
 
+
     </div>
+
 
 </section>
 
@@ -270,10 +242,11 @@
 
 <section class="trust-bar">
 
+
     <div class="container trust-grid">
 
 
-        <div class="trust-item">
+        <div>
 
             <strong>
                 📦 Pickup
@@ -286,7 +259,7 @@
         </div>
 
 
-        <div class="trust-item">
+        <div>
 
             <strong>
                 🛍️ Packing
@@ -299,7 +272,7 @@
         </div>
 
 
-        <div class="trust-item">
+        <div>
 
             <strong>
                 🚚 Delivery
@@ -312,7 +285,7 @@
         </div>
 
 
-        <div class="trust-item">
+        <div>
 
             <strong>
                 🤝 Reliable
@@ -324,7 +297,9 @@
 
         </div>
 
+
     </div>
+
 
 </section>
 
@@ -339,28 +314,36 @@
     class="section"
 >
 
+
     <div class="container">
 
 
-        <div class="section-heading reveal">
+        <div class="section-heading">
+
 
             <span class="section-label">
+
                 OUR SERVICES
+
             </span>
 
+
             <h2>
+
                 Delivery Solutions Built Around You
+
             </h2>
+
 
             <p>
 
                 Whether you bought something at an auction,
-                need help bidding on an auction item,
                 found a product online, or need help moving
                 products for your business, PKFY Logistics
                 is here to help.
 
             </p>
+
 
         </div>
 
@@ -371,15 +354,20 @@
 
             <!-- AUCTION -->
 
-            <div class="service-card reveal">
+            <div class="service-card">
+
 
                 <div class="service-icon">
                     🏷️
                 </div>
 
+
                 <h3>
+
                     Auction House Delivery
+
                 </h3>
+
 
                 <p>
 
@@ -391,6 +379,7 @@
 
                 </p>
 
+
                 <a
                     href="https://forms.gle/nzZoX1SvR768UcBG8"
                     target="_blank"
@@ -401,58 +390,27 @@
 
                 </a>
 
-            </div>
-
-
-
-            <!-- BID FOR ME -->
-
-            <div class="service-card bid-service-card reveal">
-
-                <div class="service-icon">
-                    🎯
-                </div>
-
-                <div class="service-badge">
-                    NEW SERVICE
-                </div>
-
-                <h3>
-                    Bid For Me
-                </h3>
-
-                <p>
-
-                    Don't know how auction bidding works?
-                    Don't have time to bid?
-
-                    Tell us what you want and your maximum
-                    budget. PKFY Logistics can bid for you
-                    after reviewing and confirming your request.
-
-                </p>
-
-                <a href="#bid-for-me">
-
-                    Learn More →
-
-                </a>
 
             </div>
 
 
 
-            <!-- PICK & PACK -->
+            <!-- PICK PACK -->
 
-            <div class="service-card reveal">
+            <div class="service-card">
+
 
                 <div class="service-icon">
                     📦
                 </div>
 
+
                 <h3>
+
                     Pick & Pack
+
                 </h3>
+
 
                 <p>
 
@@ -462,6 +420,7 @@
                     before delivery.
 
                 </p>
+
 
                 <a
                     href="https://forms.gle/nzZoX1SvR768UcBG8"
@@ -473,21 +432,27 @@
 
                 </a>
 
+
             </div>
 
 
 
             <!-- MARKETPLACE -->
 
-            <div class="service-card reveal">
+            <div class="service-card">
+
 
                 <div class="service-icon">
                     🛒
                 </div>
 
+
                 <h3>
+
                     Marketplace Delivery
+
                 </h3>
+
 
                 <p>
 
@@ -497,6 +462,7 @@
                     We can pick it up and bring it to your location.
 
                 </p>
+
 
                 <a
                     href="https://forms.gle/nzZoX1SvR768UcBG8"
@@ -508,21 +474,27 @@
 
                 </a>
 
+
             </div>
 
 
 
             <!-- BUSINESS -->
 
-            <div class="service-card reveal">
+            <div class="service-card">
+
 
                 <div class="service-icon">
                     🏪
                 </div>
 
+
                 <h3>
+
                     Small Business Delivery
+
                 </h3>
+
 
                 <p>
 
@@ -531,6 +503,7 @@
                     to their destination.
 
                 </p>
+
 
                 <a
                     href="https://forms.gle/nzZoX1SvR768UcBG8"
@@ -542,21 +515,27 @@
 
                 </a>
 
+
             </div>
 
 
 
             <!-- LOCAL -->
 
-            <div class="service-card reveal">
+            <div class="service-card">
+
 
                 <div class="service-icon">
                     🚚
                 </div>
 
+
                 <h3>
+
                     Local Delivery
+
                 </h3>
+
 
                 <p>
 
@@ -568,6 +547,7 @@
 
                 </p>
 
+
                 <a
                     href="https://forms.gle/nzZoX1SvR768UcBG8"
                     target="_blank"
@@ -578,21 +558,27 @@
 
                 </a>
 
+
             </div>
 
 
 
             <!-- CUSTOM -->
 
-            <div class="service-card reveal">
+            <div class="service-card">
+
 
                 <div class="service-icon">
                     📍
                 </div>
 
+
                 <h3>
+
                     Custom Delivery
+
                 </h3>
+
 
                 <p>
 
@@ -602,6 +588,7 @@
                     how we can help.
 
                 </p>
+
 
                 <a
                     href="https://forms.gle/nzZoX1SvR768UcBG8"
@@ -613,342 +600,37 @@
 
                 </a>
 
+
             </div>
+
 
         </div>
 
+
     </div>
+
 
 </section>
 
 
 
 <!-- ==================================================
-     BID FOR ME
-================================================== -->
-
-<section
-    id="bid-for-me"
-    class="bid-for-me-section"
->
-
-    <div class="container">
-
-
-        <div class="section-heading reveal">
-
-            <span class="section-label">
-                NEW SERVICE
-            </span>
-
-            <h2>
-
-                You Find It.
-
-                <span>
-                    We Bid For You.
-                </span>
-
-            </h2>
-
-            <p>
-
-                Don't have time to participate in an auction?
-                Don't know how bidding works?
-
-                PKFY Logistics is here to help.
-
-            </p>
-
-        </div>
-
-
-
-        <div class="bid-main-grid">
-
-
-            <div class="bid-content reveal">
-
-                <div class="bid-icon-large">
-                    🎯
-                </div>
-
-                <h3>
-                    Let PKFY Logistics Bid For You
-                </h3>
-
-                <p>
-
-                    Sometimes you find the perfect item at an
-                    auction, but you don't know how to bid,
-                    don't have time to watch the auction,
-                    or simply don't want to deal with the
-                    bidding process.
-
-                </p>
-
-                <p>
-
-                    That's where PKFY Logistics can help.
-
-                    Tell us what product you want,
-                    send us the auction or product information,
-                    and tell us the maximum amount you are
-                    willing to spend.
-
-                </p>
-
-                <p>
-
-                    We will review your request and contact you
-                    before placing a bid on your behalf.
-
-                </p>
-
-
-                <a
-                    href="https://forms.gle/nzZoX1SvR768UcBG8"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="btn primary"
-                >
-
-                    Request Bid For Me
-
-                </a>
-
-            </div>
-
-
-
-            <div class="bid-info-card reveal">
-
-                <h3>
-                    How Bid For Me Works
-                </h3>
-
-
-                <div class="bid-step">
-
-                    <div class="bid-step-number">
-                        01
-                    </div>
-
-                    <div>
-
-                        <h4>
-                            Tell Us What You Want
-                        </h4>
-
-                        <p>
-
-                            Send us the product link,
-                            auction house name, lot number
-                            or item details.
-
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-
-                <div class="bid-step">
-
-                    <div class="bid-step-number">
-                        02
-                    </div>
-
-                    <div>
-
-                        <h4>
-                            Set Your Maximum Budget
-                        </h4>
-
-                        <p>
-
-                            Tell us the maximum amount
-                            you are willing to bid.
-
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-
-                <div class="bid-step">
-
-                    <div class="bid-step-number">
-                        03
-                    </div>
-
-                    <div>
-
-                        <h4>
-                            We Review Your Request
-                        </h4>
-
-                        <p>
-
-                            Our team reviews the auction
-                            details and contacts you
-                            before bidding.
-
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-
-                <div class="bid-step">
-
-                    <div class="bid-step-number">
-                        04
-                    </div>
-
-                    <div>
-
-                        <h4>
-                            We Bid For You
-                        </h4>
-
-                        <p>
-
-                            Once confirmed, we bid according
-                            to your instructions and approved
-                            maximum budget.
-
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-
-                <div class="bid-step">
-
-                    <div class="bid-step-number">
-                        05
-                    </div>
-
-                    <div>
-
-                        <h4>
-                            Pickup & Delivery
-                        </h4>
-
-                        <p>
-
-                            If you win, PKFY Logistics can
-                            help arrange pickup, packing
-                            and delivery.
-
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-
-        <div class="bid-request-box reveal">
-
-            <h3>
-                What Information Do We Need?
-            </h3>
-
-
-            <div class="bid-request-grid">
-
-                <div>✓ Your Name</div>
-
-                <div>✓ Phone Number</div>
-
-                <div>✓ Email Address</div>
-
-                <div>✓ Auction House / Website</div>
-
-                <div>✓ Product Name</div>
-
-                <div>✓ Product or Auction Link</div>
-
-                <div>✓ Lot or Item Number</div>
-
-                <div>✓ Your Maximum Budget</div>
-
-                <div>✓ Auction Closing Date</div>
-
-                <div>✓ Pickup Location</div>
-
-                <div>✓ Delivery Address</div>
-
-                <div>✓ Product Image or Screenshot</div>
-
-            </div>
-
-
-            <a
-                href="https://forms.gle/nzZoX1SvR768UcBG8"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="btn primary"
-            >
-
-                Submit Bid Request
-
-            </a>
-
-        </div>
-
-
-
-        <div class="bid-disclaimer">
-
-            <strong>
-                Important:
-            </strong>
-
-            PKFY Logistics does not guarantee that an
-            auction item will be won.
-
-            All bidding is subject to auction rules,
-            competition, item availability and the
-            customer's approved maximum budget.
-
-            PKFY Logistics will only bid after reviewing
-            and confirming the customer's request.
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- ==================================================
-     AUCTION DELIVERY
+     AUCTION SECTION
 ================================================== -->
 
 <section class="auction-section">
 
+
     <div class="container auction-grid">
 
 
-        <div class="reveal">
+        <div>
+
 
             <span class="section-label">
+
                 AUCTION PURCHASE?
+
             </span>
 
 
@@ -992,18 +674,21 @@
 
             </a>
 
+
         </div>
 
 
 
-        <div class="auction-steps reveal">
+        <div class="auction-steps">
 
 
             <div class="step">
 
+
                 <div class="step-number">
                     01
                 </div>
+
 
                 <div>
 
@@ -1012,11 +697,14 @@
                     </h3>
 
                     <p>
+
                         You purchase your item
                         from the auction house.
+
                     </p>
 
                 </div>
+
 
             </div>
 
@@ -1024,9 +712,11 @@
 
             <div class="step">
 
+
                 <div class="step-number">
                     02
                 </div>
+
 
                 <div>
 
@@ -1035,11 +725,14 @@
                     </h3>
 
                     <p>
+
                         We collect your item
                         from the auction location.
+
                     </p>
 
                 </div>
+
 
             </div>
 
@@ -1047,9 +740,11 @@
 
             <div class="step">
 
+
                 <div class="step-number">
                     03
                 </div>
+
 
                 <div>
 
@@ -1058,11 +753,14 @@
                     </h3>
 
                     <p>
+
                         Packing service is available
                         when needed.
+
                     </p>
 
                 </div>
+
 
             </div>
 
@@ -1070,9 +768,11 @@
 
             <div class="step">
 
+
                 <div class="step-number">
                     04
                 </div>
+
 
                 <div>
 
@@ -1081,17 +781,23 @@
                     </h3>
 
                     <p>
+
                         Your item is delivered
                         to your destination.
+
                     </p>
 
                 </div>
 
+
             </div>
+
 
         </div>
 
+
     </div>
+
 
 </section>
 
@@ -1106,18 +812,26 @@
     class="section light-section"
 >
 
+
     <div class="container">
 
 
-        <div class="section-heading reveal">
+        <div class="section-heading">
+
 
             <span class="section-label">
+
                 HOW IT WORKS
+
             </span>
 
+
             <h2>
+
                 Simple From Start to Finish
+
             </h2>
+
 
         </div>
 
@@ -1126,15 +840,20 @@
         <div class="process-grid">
 
 
-            <div class="process-card reveal">
+            <div class="process-card">
+
 
                 <div class="process-number">
                     1
                 </div>
 
+
                 <h3>
+
                     Submit Your Request
+
                 </h3>
+
 
                 <p>
 
@@ -1144,19 +863,25 @@
 
                 </p>
 
+
             </div>
 
 
 
-            <div class="process-card reveal">
+            <div class="process-card">
+
 
                 <div class="process-number">
                     2
                 </div>
 
+
                 <h3>
+
                     Receive Your Quote
+
                 </h3>
+
 
                 <p>
 
@@ -1166,19 +891,25 @@
 
                 </p>
 
+
             </div>
 
 
 
-            <div class="process-card reveal">
+            <div class="process-card">
+
 
                 <div class="process-number">
                     3
                 </div>
 
+
                 <h3>
+
                     We Pick It Up
+
                 </h3>
+
 
                 <p>
 
@@ -1187,19 +918,25 @@
 
                 </p>
 
+
             </div>
 
 
 
-            <div class="process-card reveal">
+            <div class="process-card">
+
 
                 <div class="process-number">
                     4
                 </div>
 
+
                 <h3>
+
                     Delivered to You
+
                 </h3>
+
 
                 <p>
 
@@ -1208,18 +945,22 @@
 
                 </p>
 
+
             </div>
+
 
         </div>
 
+
     </div>
+
 
 </section>
 
 
 
 <!-- ==================================================
-     PRICING
+     NEW ONTARIO-WIDE PRICING
 ================================================== -->
 
 <section
@@ -1227,18 +968,26 @@
     class="section pricing-section"
 >
 
+
     <div class="container">
 
 
-        <div class="section-heading reveal">
+        <div class="section-heading">
+
 
             <span class="section-label">
+
                 PRICE LIST — ONTARIO-WIDE SERVICE
+
             </span>
 
+
             <h2>
+
                 All Over Ontario
+
             </h2>
+
 
             <div class="one-item-warning">
 
@@ -1246,31 +995,43 @@
 
             </div>
 
+
         </div>
 
 
 
         <!-- DELIVERY -->
 
-        <div class="pricing-block reveal">
+        <div class="pricing-block">
+
 
             <div class="pricing-block-header">
 
+
                 <div class="pricing-block-icon">
+
                     🚚
+
                 </div>
+
 
                 <div>
 
                     <h3>
+
                         DELIVERY
+
                     </h3>
 
+
                     <p>
+
                         (PICK + PACK + DROP)
+
                     </p>
 
                 </div>
+
 
             </div>
 
@@ -1307,16 +1068,22 @@
                 <div class="price-row">
 
                     <span>
+
                         Under 25 km
                         <small>Local</small>
+
                     </span>
 
                     <strong>
+
                         $15
+
                     </strong>
 
                     <strong>
+
                         $18
+
                     </strong>
 
                 </div>
@@ -1326,16 +1093,22 @@
                 <div class="price-row">
 
                     <span>
+
                         Under 50 km
                         <small>Local</small>
+
                     </span>
 
                     <strong>
+
                         $20
+
                     </strong>
 
                     <strong>
+
                         $21.90
+
                     </strong>
 
                 </div>
@@ -1345,21 +1118,29 @@
                 <div class="price-row">
 
                     <span>
+
                         Regional
                         <small>Long Distance</small>
+
                     </span>
 
                     <strong>
+
                         $25
+
                     </strong>
 
                     <strong>
+
                         $27.90
+
                     </strong>
 
                 </div>
 
+
             </div>
+
 
         </div>
 
@@ -1367,25 +1148,36 @@
 
         <!-- PICKUP ONLY -->
 
-        <div class="pricing-block reveal">
+        <div class="pricing-block">
+
 
             <div class="pricing-block-header">
 
+
                 <div class="pricing-block-icon">
+
                     📦
+
                 </div>
+
 
                 <div>
 
                     <h3>
+
                         PICKUP ONLY
+
                     </h3>
 
+
                     <p>
+
                         (CUSTOMER COLLECTS FROM US)
+
                     </p>
 
                 </div>
+
 
             </div>
 
@@ -1447,30 +1239,42 @@
 
                 </div>
 
+
             </div>
+
 
         </div>
 
 
 
-        <!-- INFORMATION -->
+        <!-- IMPORTANT INFORMATION -->
 
         <div class="info-grid">
 
 
-            <div class="info-card reveal">
+            <div class="info-card">
+
 
                 <div class="info-icon">
+
                     ℹ️
+
                 </div>
 
+
                 <h3>
+
                     IMPORTANT INFORMATION
+
                 </h3>
 
+
                 <h4>
+
                     Large / Oversized Packages
+
                 </h4>
+
 
                 <p>
 
@@ -1479,23 +1283,34 @@
 
                 </p>
 
+
             </div>
 
 
 
-            <div class="info-card reveal">
+            <div class="info-card">
+
 
                 <div class="info-icon">
+
                     🛡️
+
                 </div>
 
+
                 <h3>
+
                     ADDITIONAL CHARGES
+
                 </h3>
 
+
                 <h4>
+
                     Special Handling / Insurance
+
                 </h4>
+
 
                 <p>
 
@@ -1504,52 +1319,74 @@
 
                 </p>
 
+
             </div>
+
 
         </div>
 
 
 
-        <!-- NOTES -->
+        <!-- IMPORTANT NOTES -->
 
-        <div class="important-notes reveal">
+        <div class="important-notes">
+
 
             <h3>
+
                 📌 IMPORTANT NOTES
+
             </h3>
+
 
             <ul>
 
                 <li>
+
                     Prices may vary slightly based on exact
                     distance and area.
+
                 </li>
 
+
                 <li>
+
                     All prices are before tax.
+
                 </li>
 
+
                 <li>
+
                     Final price will be confirmed after
                     order details.
+
                 </li>
 
+
                 <li>
+
                     All prices listed above are for
                     ONE ITEM ONLY.
+
                 </li>
 
             </ul>
+
 
         </div>
 
 
 
-        <div class="pricing-cta reveal">
+        <div class="pricing-cta">
+
 
             <h3>
+
                 Need a Delivery Quote?
+
             </h3>
+
 
             <p>
 
@@ -1557,6 +1394,7 @@
                 through our official request form.
 
             </p>
+
 
             <a
                 href="https://forms.gle/nzZoX1SvR768UcBG8"
@@ -1569,9 +1407,12 @@
 
             </a>
 
+
         </div>
 
+
     </div>
+
 
 </section>
 
@@ -1586,24 +1427,32 @@
     class="quote-section"
 >
 
+
     <div class="container quote-grid">
 
 
-        <div class="quote-info reveal">
+        <div class="quote-info">
+
 
             <span class="section-label">
+
                 GET STARTED
+
             </span>
 
+
             <h2>
+
                 Tell Us What You Need
+
             </h2>
+
 
             <p>
 
                 Fill out our official PKFY Logistics
                 request form and tell us about your
-                pickup, bidding or delivery needs.
+                pickup and delivery.
 
                 We'll review your request and contact
                 you with the next steps.
@@ -1611,51 +1460,70 @@
             </p>
 
 
+
             <div class="quote-benefit">
+
                 ✓ Auction house pickup
+
             </div>
 
-            <div class="quote-benefit">
-                ✓ Bid For Me service
-            </div>
 
             <div class="quote-benefit">
+
                 ✓ Marketplace pickup
+
             </div>
 
+
             <div class="quote-benefit">
+
                 ✓ Packing service
+
             </div>
 
+
             <div class="quote-benefit">
+
                 ✓ Ontario-wide delivery
+
             </div>
 
+
             <div class="quote-benefit">
+
                 ✓ Small business delivery
+
             </div>
+
 
         </div>
 
 
 
-        <div class="form-box reveal">
+        <div class="form-box">
+
 
             <div class="form-box-icon">
+
                 📝
+
             </div>
 
+
             <h3>
-                Request a Service
+
+                Request a Delivery Quote
+
             </h3>
+
 
             <p>
 
                 Click the button below to complete
                 our official PKFY Logistics request form.
 
-                Tell us if you need a delivery,
-                pickup, packing service or Bid For Me service.
+                Your request will be submitted through
+                our Google Form.
 
             </p>
 
@@ -1679,9 +1547,12 @@
 
             </small>
 
+
         </div>
 
+
     </div>
+
 
 </section>
 
@@ -1696,27 +1567,35 @@
     class="section contact-section"
 >
 
+
     <div class="container">
 
 
-        <div class="section-heading reveal">
+        <div class="section-heading">
+
 
             <span class="section-label">
+
                 CONTACT PKFY LOGISTICS
+
             </span>
 
+
             <h2>
+
                 Let's Get Your Delivery Moving
+
             </h2>
+
 
             <p>
 
-                Have a question, need help bidding,
-                or need a custom delivery?
+                Have a question or need a custom delivery?
 
                 Contact PKFY Logistics today.
 
             </p>
+
 
         </div>
 
@@ -1725,70 +1604,115 @@
         <div class="contact-grid">
 
 
-            <div class="contact-card reveal">
+            <!-- PHONE -->
+
+            <div class="contact-card">
+
 
                 <div class="contact-icon">
+
                     📞
+
                 </div>
 
+
                 <h3>
+
                     Call Us
+
                 </h3>
 
+
                 <p>
+
                     Speak with us about your
-                    pickup, bidding or delivery.
+                    pickup or delivery.
+
                 </p>
+
 
                 <a href="tel:+14375660306">
+
                     +1 (437) 566-0306
+
                 </a>
+
 
                 <a href="tel:+16477974686">
+
                     +1 (647) 797-4686
+
                 </a>
+
 
             </div>
 
 
 
-            <div class="contact-card reveal">
+            <!-- EMAIL -->
+
+            <div class="contact-card">
+
 
                 <div class="contact-icon">
+
                     ✉️
+
                 </div>
 
+
                 <h3>
+
                     Email Us
+
                 </h3>
 
+
                 <p>
-                    Send us your delivery details,
-                    bidding request or business inquiry.
+
+                    Send us your delivery details
+                    or business inquiry.
+
                 </p>
+
 
                 <a href="mailto:Pkfylogistics@gmail.com">
+
                     Pkfylogistics@gmail.com
+
                 </a>
+
 
             </div>
 
 
 
-            <div class="contact-card reveal">
+            <!-- INSTAGRAM -->
+
+            <div class="contact-card">
+
 
                 <div class="contact-icon">
+
                     📸
+
                 </div>
 
+
                 <h3>
+
                     Follow Us
+
                 </h3>
 
+
                 <p>
+
                     Follow PKFY Logistics on Instagram
                     for updates and news.
+
                 </p>
+
 
                 <a
                     href="https://www.instagram.com/pkfylogistics?igsh=MTdtYTF1ZHd6NTQ0aA=="
@@ -1798,18 +1722,24 @@
                 >
 
                     <span class="instagram-icon">
+
                         ◎
+
                     </span>
 
                     @PKFYlogistics
 
                 </a>
 
+
             </div>
+
 
         </div>
 
+
     </div>
+
 
 </section>
 
@@ -1821,15 +1751,23 @@
 
 <section class="cta-section">
 
+
     <div class="container">
 
+
         <h2>
-            Need Something Picked Up, Bid On or Delivered?
+
+            Need Something Picked Up or Delivered?
+
         </h2>
 
+
         <p>
+
             Let PKFY Logistics handle the journey.
+
         </p>
+
 
         <a
             href="https://forms.gle/nzZoX1SvR768UcBG8"
@@ -1842,7 +1780,9 @@
 
         </a>
 
+
     </div>
+
 
 </section>
 
@@ -1854,105 +1794,147 @@
 
 <footer>
 
+
     <div class="container footer-grid">
 
 
+        <!-- BRAND -->
+
         <div>
+
 
             <div class="footer-logo">
 
+
                 <img
-                    class="pkfy-logo"
-                    src=""
+                    src="https://kommodo.ai/i/hWZG5XUMtItwzxWWTYmN"
                     alt="PKFY Logistics Logo"
                 >
+
 
             </div>
 
 
             <p class="footer-tagline">
+
                 WHERE EVERY DELIVERY MATTERS
+
             </p>
 
 
             <p class="footer-description">
 
-                Pickup, packing, auction bidding assistance
-                and delivery solutions for individuals,
-                auction buyers, marketplace customers
-                and small businesses across Ontario.
+                Pickup, packing and delivery solutions
+                for individuals, auction buyers,
+                marketplace customers and small businesses
+                across Ontario.
 
             </p>
 
+
         </div>
 
 
 
+        <!-- QUICK LINKS -->
+
         <div>
 
+
             <h4>
+
                 Quick Links
+
             </h4>
+
 
             <a href="#home">
+
                 Home
+
             </a>
+
 
             <a href="#services">
+
                 Services
+
             </a>
 
-            <a href="#bid-for-me">
-                Bid For Me
-            </a>
 
             <a href="#pricing">
+
                 Pricing
+
             </a>
 
+
             <a href="#quote">
+
                 Get a Quote
+
             </a>
+
 
         </div>
 
 
 
+        <!-- SERVICES -->
+
         <div>
 
+
             <h4>
+
                 Services
+
             </h4>
 
-            <a href="#bid-for-me">
-                Bid For Me
-            </a>
 
             <a href="#quote">
+
                 Auction Pickup
+
             </a>
 
+
             <a href="#quote">
+
                 Packing
+
             </a>
 
+
             <a href="#quote">
+
                 Marketplace Delivery
+
             </a>
 
+
             <a href="#quote">
+
                 Business Delivery
+
             </a>
+
 
         </div>
 
 
 
+        <!-- SOCIAL MEDIA -->
+
         <div>
 
+
             <h4>
+
                 Follow Us
+
             </h4>
+
 
             <a
                 href="https://www.instagram.com/pkfylogistics?igsh=MTdtYTF1ZHd6NTQ0aA=="
@@ -1962,7 +1944,9 @@
             >
 
                 <span class="instagram-icon">
+
                     ◎
+
                 </span>
 
                 @PKFYlogistics
@@ -1970,21 +1954,31 @@
             </a>
 
 
-            <a href="mailto:Pkfylogistics@gmail.com">
+            <a
+                href="mailto:Pkfylogistics@gmail.com"
+            >
+
                 ✉️ Pkfylogistics@gmail.com
+
             </a>
 
 
             <a href="tel:+14375660306">
+
                 📞 +1 (437) 566-0306
+
             </a>
 
 
             <a href="tel:+16477974686">
+
                 📞 +1 (647) 797-4686
+
             </a>
 
+
         </div>
+
 
     </div>
 
@@ -1997,12 +1991,13 @@
 
     </div>
 
+
 </footer>
 
 
 
 <!-- ==================================================
-     WHATSAPP
+     FLOATING WHATSAPP
 ================================================== -->
 
 <a
