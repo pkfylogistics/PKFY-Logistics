@@ -13,8 +13,6 @@
 
     --light: #f7f7f7;
 
-    --dark-gray: #111111;
-
     --gray: #666666;
 
     --border: #e5e5e5;
@@ -105,18 +103,20 @@ input {
 
     width: 100%;
 
+    height: 82px;
+
     background: var(--black);
 
     z-index: 1000;
 
-    border-bottom: 1px solid rgba(240, 185, 66, 0.2);
+    border-bottom: 1px solid rgba(240, 185, 66, 0.25);
 
 }
 
 
 .nav-container {
 
-    height: 82px;
+    height: 100%;
 
     display: flex;
 
@@ -127,25 +127,41 @@ input {
 }
 
 
+/* =====================================
+   PNG LOGO
+===================================== */
+
 .logo-link {
 
     display: flex;
 
     align-items: center;
 
+    height: 100%;
+
+    flex-shrink: 0;
+
 }
 
 
 .logo {
 
-    width: 150px;
+    display: block;
 
-    max-height: 65px;
+    width: 155px;
+
+    height: auto;
+
+    max-height: 68px;
 
     object-fit: contain;
 
 }
 
+
+/* =====================================
+   DESKTOP NAV
+===================================== */
 
 .navbar {
 
@@ -153,7 +169,7 @@ input {
 
     align-items: center;
 
-    gap: 22px;
+    gap: 20px;
 
 }
 
@@ -162,9 +178,11 @@ input {
 
     color: var(--white);
 
-    font-size: 13px;
+    font-size: 12px;
 
     font-weight: 600;
+
+    white-space: nowrap;
 
     transition: var(--transition);
 
@@ -184,9 +202,11 @@ input {
 
     color: var(--black) !important;
 
-    padding: 12px 18px;
+    padding: 11px 16px;
 
-    border-radius: 5px;
+    border-radius: 4px;
+
+    font-weight: 800 !important;
 
 }
 
@@ -198,19 +218,109 @@ input {
 }
 
 
+/* =====================================
+   HAMBURGER
+===================================== */
+
 .menu-toggle {
 
     display: none;
 
-    background: none;
+    width: 48px;
+
+    height: 48px;
 
     border: none;
 
-    color: var(--gold);
-
-    font-size: 26px;
+    background: transparent;
 
     cursor: pointer;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 6px;
+
+    padding: 0;
+
+}
+
+
+.menu-toggle span {
+
+    display: block;
+
+    width: 30px;
+
+    height: 4px;
+
+    background: var(--gold);
+
+    border-radius: 3px;
+
+    transition: var(--transition);
+
+}
+
+
+/* Hamburger animation */
+
+.menu-toggle.active span:nth-child(1) {
+
+    transform:
+        translateY(10px)
+        rotate(45deg);
+
+}
+
+
+.menu-toggle.active span:nth-child(2) {
+
+    opacity: 0;
+
+}
+
+
+.menu-toggle.active span:nth-child(3) {
+
+    transform:
+        translateY(-10px)
+        rotate(-45deg);
+
+}
+
+
+/* =====================================
+   MOBILE OVERLAY
+===================================== */
+
+.mobile-menu-overlay {
+
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(0,0,0,0.65);
+
+    z-index: 998;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition: var(--transition);
+
+}
+
+
+.mobile-menu-overlay.active {
+
+    opacity: 1;
+
+    visibility: visible;
 
 }
 
@@ -294,8 +404,6 @@ input {
     line-height: 1.02;
 
     font-weight: 900;
-
-    max-width: 800px;
 
 }
 
@@ -411,7 +519,7 @@ input {
 
 .btn-black:hover {
 
-    background: var(--gold);
+    background: var(--white);
 
     color: var(--black);
 
@@ -494,7 +602,8 @@ input {
 
 @keyframes truckFloat {
 
-    0%, 100% {
+    0%,
+    100% {
 
         transform: translateY(0);
 
@@ -580,7 +689,7 @@ input {
 
 
 /* =====================================
-   GENERAL SECTIONS
+   SECTIONS
 ===================================== */
 
 .section {
@@ -645,13 +754,6 @@ input {
 /* =====================================
    PROBLEM
 ===================================== */
-
-.problem-section {
-
-    background: var(--white);
-
-}
-
 
 .problem-grid {
 
@@ -757,13 +859,6 @@ input {
 }
 
 
-.solution-box p {
-
-    color: #cccccc;
-
-}
-
-
 /* =====================================
    DARK SECTION
 ===================================== */
@@ -793,8 +888,6 @@ input {
 
 
 .step {
-
-    position: relative;
 
     padding: 35px 25px;
 
@@ -834,13 +927,6 @@ input {
     font-size: 35px;
 
     margin-bottom: 20px;
-
-}
-
-
-.step h3 {
-
-    margin-bottom: 10px;
 
 }
 
@@ -985,13 +1071,6 @@ input {
 }
 
 
-.auction-image-card h3 {
-
-    font-size: 30px;
-
-}
-
-
 .disclaimer {
 
     margin-top: 50px;
@@ -1014,15 +1093,6 @@ input {
     color: var(--gold);
 
     font-size: 22px;
-
-}
-
-
-.disclaimer p {
-
-    color: var(--gray);
-
-    font-size: 13px;
 
 }
 
@@ -1057,8 +1127,6 @@ input {
 
     border-color: var(--gold);
 
-    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
-
     transform: translateY(-5px);
 
 }
@@ -1083,13 +1151,6 @@ input {
     font-size: 25px;
 
     margin-bottom: 25px;
-
-}
-
-
-.service-card h3 {
-
-    margin-bottom: 10px;
 
 }
 
@@ -1139,13 +1200,6 @@ input {
 .price-card.featured {
 
     border: 2px solid var(--gold);
-
-}
-
-
-.price-header {
-
-    margin-bottom: 30px;
 
 }
 
@@ -1279,15 +1333,6 @@ input {
 .price-notes i {
 
     color: var(--gold);
-
-    font-size: 20px;
-
-}
-
-
-.price-notes h4 {
-
-    margin-bottom: 5px;
 
 }
 
@@ -1491,20 +1536,11 @@ input {
 }
 
 
-.about-image-placeholder h3 {
-
-    font-size: 30px;
-
-}
-
-
 .about-content h2 {
 
     font-size: clamp(35px, 5vw, 55px);
 
     line-height: 1.1;
-
-    margin-bottom: 25px;
 
 }
 
@@ -1520,7 +1556,7 @@ input {
 
     color: var(--gray);
 
-    margin-bottom: 15px;
+    margin: 15px 0;
 
 }
 
@@ -1534,15 +1570,6 @@ input {
     grid-template-columns: 1fr 1fr;
 
     gap: 12px;
-
-}
-
-
-.why-grid div {
-
-    font-weight: 700;
-
-    font-size: 14px;
 
 }
 
@@ -1571,17 +1598,6 @@ input {
 }
 
 
-.cta-content > span {
-
-    font-size: 13px;
-
-    font-weight: 900;
-
-    letter-spacing: 2px;
-
-}
-
-
 .cta-content h2 {
 
     font-size: clamp(35px, 6vw, 65px);
@@ -1600,23 +1616,9 @@ input {
 }
 
 
-.cta-content p {
-
-    margin-bottom: 25px;
-
-}
-
-
 /* =====================================
    CONTACT
 ===================================== */
-
-.contact-section {
-
-    background: var(--white);
-
-}
-
 
 .contact-grid {
 
@@ -1673,67 +1675,6 @@ input {
 }
 
 
-.contact-social {
-
-    text-align: center;
-
-    margin-top: 50px;
-
-}
-
-
-.contact-social > span {
-
-    font-weight: 800;
-
-}
-
-
-.contact-social div {
-
-    display: flex;
-
-    justify-content: center;
-
-    gap: 15px;
-
-    margin: 20px 0;
-
-}
-
-
-.contact-social a {
-
-    width: 45px;
-
-    height: 45px;
-
-    background: var(--black);
-
-    color: var(--gold);
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    border-radius: 50%;
-
-    transition: var(--transition);
-
-}
-
-
-.contact-social a:hover {
-
-    background: var(--gold);
-
-    color: var(--black);
-
-}
-
-
 /* =====================================
    FOOTER
 ===================================== */
@@ -1764,7 +1705,11 @@ input {
 
 .footer-brand img {
 
-    width: 150px;
+    width: 155px;
+
+    max-height: 75px;
+
+    object-fit: contain;
 
     margin-bottom: 15px;
 
@@ -1833,8 +1778,6 @@ input {
 
     justify-content: space-between;
 
-    gap: 20px;
-
     color: #777;
 
     font-size: 12px;
@@ -1843,7 +1786,7 @@ input {
 
 
 /* =====================================
-   FLOATING BUTTON
+   FLOATING REQUEST
 ===================================== */
 
 .floating-request {
@@ -1876,68 +1819,181 @@ input {
 
     box-shadow: 0 10px 30px rgba(0,0,0,0.25);
 
-    transition: var(--transition);
-
 }
 
 
-.floating-request:hover {
+/* =====================================
+   TABLET
+===================================== */
 
-    background: var(--white);
+@media (max-width: 1100px) {
 
-    transform: translateY(-4px);
+
+    .navbar {
+
+        gap: 13px;
+
+    }
+
+
+    .navbar a {
+
+        font-size: 11px;
+
+    }
+
+
+    .logo {
+
+        width: 135px;
+
+    }
+
 
 }
 
 
 /* =====================================
-   RESPONSIVE
+   MOBILE NAVIGATION
 ===================================== */
 
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
 
-    .navbar {
 
-        position: fixed;
+    .header {
 
-        top: 82px;
-
-        right: -100%;
-
-        width: 300px;
-
-        height: calc(100vh - 82px);
-
-        background: var(--black);
-
-        flex-direction: column;
-
-        align-items: flex-start;
-
-        padding: 30px;
-
-        transition: var(--transition);
+        height: 70px;
 
     }
 
 
-    .navbar.active {
+    .nav-container {
 
-        right: 0;
+        width: 100%;
+
+        padding: 0 20px;
+
+    }
+
+
+    .logo {
+
+        width: 135px;
+
+        max-height: 55px;
 
     }
 
 
     .menu-toggle {
 
-        display: block;
+        display: flex;
+
+        position: relative;
+
+        z-index: 1002;
 
     }
 
 
-    .hero-content,
-    .auction-grid,
-    .about-grid {
+    .navbar {
+
+        position: fixed;
+
+        top: 70px;
+
+        left: 0;
+
+        right: 0;
+
+        width: 100%;
+
+        height: auto;
+
+        max-height: calc(100vh - 70px);
+
+        overflow-y: auto;
+
+        background: var(--black);
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 0;
+
+        padding: 10px 20px 25px;
+
+        transform: translateY(-120%);
+
+        opacity: 0;
+
+        visibility: hidden;
+
+        transition:
+
+            transform 0.35s ease,
+
+            opacity 0.35s ease,
+
+            visibility 0.35s ease;
+
+        box-shadow:
+            0 15px 30px
+            rgba(0,0,0,0.4);
+
+    }
+
+
+    .navbar.active {
+
+        transform: translateY(0);
+
+        opacity: 1;
+
+        visibility: visible;
+
+    }
+
+
+    .navbar a {
+
+        width: 100%;
+
+        padding: 16px 10px;
+
+        border-bottom:
+            1px solid
+            rgba(255,255,255,0.08);
+
+        font-size: 14px;
+
+    }
+
+
+    .navbar .nav-request {
+
+        margin-top: 15px;
+
+        text-align: center;
+
+        border: none;
+
+        padding: 15px;
+
+    }
+
+
+    .hero {
+
+        padding-top: 70px;
+
+    }
+
+
+    .hero-content {
 
         grid-template-columns: 1fr;
 
@@ -1972,13 +2028,6 @@ input {
     }
 
 
-    .price-notes {
-
-        grid-template-columns: 1fr;
-
-    }
-
-
     .contact-grid {
 
         grid-template-columns: 1fr 1fr;
@@ -1992,21 +2041,96 @@ input {
 
     }
 
+
 }
 
 
-@media (max-width: 650px) {
+/* =====================================
+   MOBILE
+===================================== */
 
-    .section {
+@media (max-width: 600px) {
 
-        padding: 70px 0;
+
+    .container {
+
+        width: 90%;
 
     }
 
 
+    /* FIX MOBILE HEADER */
+
+    .header {
+
+        height: 68px;
+
+    }
+
+
+    .nav-container {
+
+        height: 68px;
+
+        padding: 0 18px;
+
+    }
+
+
+    .logo {
+
+        width: 125px;
+
+        max-height: 52px;
+
+    }
+
+
+    .menu-toggle {
+
+        width: 45px;
+
+        height: 45px;
+
+    }
+
+
+    .menu-toggle span {
+
+        width: 28px;
+
+        height: 4px;
+
+    }
+
+
+    .navbar {
+
+        top: 68px;
+
+        max-height:
+            calc(100vh - 68px);
+
+    }
+
+
+    /* HERO */
+
     .hero {
 
         min-height: 850px;
+
+        padding-top: 68px;
+
+        background-position:
+            58% center;
+
+    }
+
+
+    .hero-content {
+
+        width: 90%;
 
     }
 
@@ -2015,6 +2139,8 @@ input {
 
         font-size: 42px;
 
+        line-height: 1.02;
+
     }
 
 
@@ -2022,12 +2148,16 @@ input {
 
         font-size: 16px;
 
+        line-height: 1.6;
+
     }
 
 
     .hero-buttons {
 
         flex-direction: column;
+
+        width: 100%;
 
     }
 
@@ -2046,6 +2176,17 @@ input {
     }
 
 
+    .trust-grid div {
+
+        flex-direction: column;
+
+        text-align: center;
+
+        font-size: 12px;
+
+    }
+
+
     .problem-grid,
     .steps,
     .services-grid,
@@ -2060,6 +2201,30 @@ input {
 
         align-items: flex-start;
 
+        padding: 25px;
+
+    }
+
+
+    .auction-grid,
+    .about-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .auction-visual {
+
+        min-height: 350px;
+
+    }
+
+
+    .auction-image-card {
+
+        height: 350px;
+
     }
 
 
@@ -2067,7 +2232,12 @@ input {
 
         grid-template-columns: 1fr;
 
-        gap: 8px;
+    }
+
+
+    .price-notes {
+
+        grid-template-columns: 1fr;
 
     }
 
@@ -2115,14 +2285,48 @@ input {
 
     .floating-request {
 
-        right: 15px;
+        left: 18px;
 
-        left: 15px;
+        right: 18px;
 
         bottom: 15px;
 
         justify-content: center;
 
+        padding: 17px;
+
     }
 
-  }
+
+}
+
+
+/* =====================================
+   VERY SMALL PHONES
+===================================== */
+
+@media (max-width: 380px) {
+
+
+    .logo {
+
+        width: 110px;
+
+    }
+
+
+    .nav-container {
+
+        padding: 0 14px;
+
+    }
+
+
+    .hero h1 {
+
+        font-size: 36px;
+
+    }
+
+
+}
