@@ -40,7 +40,7 @@
         <!-- CLICKABLE LOGO -->
         <a href="#home" class="logo-link" aria-label="PKFY Logistics Home">
             <img
-                src="[![1746-removebg-preview.png](https://i.postimg.cc/kDrFDP53/1746-removebg-preview.png)](https://postimg.cc/dZBTSXd4)
+                src="https://i.postimg.cc/kDrFDP53/1746-removebg-preview.png"
                 class="logo">
         </a>
 
