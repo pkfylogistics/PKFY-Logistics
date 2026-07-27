@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+/
+.<!<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -39,8 +40,7 @@
         <!-- CLICKABLE LOGO -->
         <a href="#home" class="logo-link" aria-label="PKFY Logistics Home">
             <img
-                src="https://i.postimg.cc/sxKky12p/IMG-2750.png"
-                alt="PKFY Logistics Logo"
+                src="[![1746-removebg-preview.png](https://i.postimg.cc/kDrFDP53/1746-removebg-preview.png)](https://postimg.cc/dZBTSXd4)
                 class="logo">
         </a>
 
