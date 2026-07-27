@@ -50,8 +50,7 @@
         >
 
             <img
-                src=["https://kommodo.ai/i/hWZG5XUMtItwzxWWTYmN"
-                alt="PKFY Logistics Logo"](https://kommodo.ai/i/hWZG5XUMtItwzxWWTYmN)
+                src=https://kommodo.ai/i/hWZG5XUMtItwzxWWTYmN
             >
 
         </a>
