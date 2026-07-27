@@ -50,7 +50,7 @@
         >
 
             <img
-                src=https://kommodo.ai/i/DyCFIywX42IiZCn3Dl18
+                src=https://i.postimg.cc/sxKky12p/IMG-2750.png
             >
 
         </a>
